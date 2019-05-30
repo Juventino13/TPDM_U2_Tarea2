@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Main7ActivityListaPropietario">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="397dp"
+        android:layout_height="74dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="244dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="Consultar seguros"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="25dp"
+            app:layout_constraintStart_toEndOf="@+id/btnRegresarSeg"
+            tools:layout_editor_absoluteY="22dp" />
+
+        <Button
+            android:id="@+id/btnRegresarSeg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#81D4FA"
+            android:text="Regresar"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl__NombrePropietario"
+        android:text="Nombre"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt__NombrePropietario"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl__DomicilioPropietario"
+        android:text="Domicilio:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt__DomicilioPropietario"
+        android:hint="Calle #10"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl__TelefonoPropietario"
+        android:text="Telefono:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt__TelefonoPropietario"
+        android:hint="Telefono"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl__FechaPropietario"
+        android:text="Fecha:"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt__FechaPropietario"
+        android:inputType="date"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnActualizarPropietario"
+        android:text="Actualizar propietario"
+        android:background="#81D4FA"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEliminarPro"
+        android:text="Eliminar propietario"
+        android:layout_gravity="center"
+        android:background="#81D4FA"
+        android:layout_marginTop="10dp"
+        />
+
+
+</LinearLayout>

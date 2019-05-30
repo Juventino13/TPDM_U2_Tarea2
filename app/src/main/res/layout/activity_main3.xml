@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main3Activity">
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Main3ActivityPropietario">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="375dp"
+        android:layout_height="89dp">
+
+        <Button
+            android:id="@+id/btnRegresarPropietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#81D4FA"
+            android:text="Regresar"
+
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <TextView
+            android:id="@+id/lblTituloPropietario"
+            android:layout_width="276dp"
+            android:layout_height="33dp"
+            android:text="Propietarios"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="25dp"
+
+            tools:layout_editor_absoluteX="119dp"
+            tools:layout_editor_absoluteY="40dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/ListPropietario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
